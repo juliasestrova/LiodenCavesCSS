@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Science+Gothic:wght@100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-0: #260d33;
+  --color-1: #2e183b;
+  --color-2: #312750;
+  --color-3: #554685;  
+  --color-4: #8f5483;
+  --color-5: #d87e94;
+  --color-6: #e8afbf;
+  --color-7: #ffffff;
+  
+  --transparent-color-1: rgba(46, 24, 59, 0.4);
+  --transparent-color-2: rgba(85, 70, 133, 0.4);
+  --transparent-color-3: rgba(232, 175, 191, 0.4);
+  
+  --font-1: 'Tourney', sans-serif;
+  --font-2: 'Science Gothic', sans-serif;
+  --font-3: 'Edu SA Beginner', sans-serif;
+}
+
+body {
+  background: url(https://cdn.pixabay.com/photo/2020/11/08/12/27/stairs-5723586_1280.jpg) fixed;
+  background-size: cover;
+}
+
+
+/*topbar*/
+.container.topbar {
+  color: var(--color-6);
+  background: var(--color-1);
+  border-radius: 15px;
+  font-family: var(--font-2);
+  font-size: 14px;
+  font-weight: 300;
+  border: 5px solid var(--color-0);
+}
+
+.container.topbar a {
+  color: var(--color-5);
+  font-weight: 500;
+}
+
+.container.topbar a:hover {
+  filter: drop-shadow(4px 4px 4px var(--color-4));
+  background: transparent;
+  color: var(--color-5);
+}
+
+/*main*/
+.container.main {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+/*navbar*/
+nav.navbar.navbar-default {
+  background: var(--color-1);
+  border: 5px solid var(--color-0);
+}
+
+nav.navbar.navbar-default a {
+  color: var(--color-5);
+  font-family: var(--font-2);
+  font-size: small;
+}
+
+nav.navbar.navbar-default a:hover {
+  filter: drop-shadow(4px 4px 4px var(--color-4));
+  background: transparent;
+  color: var(--color-5);
+}
+
+a.navbar-brand.visible-lg.visible-md img {
+  filter: saturate(0.8) brightness(65%) hue-rotate(282deg);
+}
+
+/*page*/
+.col-md-9 {
+  background: var(--transparent-color-1);
+  min-height: 800px;
+  padding-top: 25px;
+  font-family: var(--font-3);
+  font-size: medium;
+}
+
+/*breadcrumb*/
+ol.breadcrumb {
+  background: var(--color-1);
+  border-radius: 10px;
+}
+ol.breadcrumb a {
+  color: var(--color-6);
+  font-family: var(--font-2);
+  font-size: smaller;
+}
+
+li.breadcrumb-item.active {
+  color: var(--color-5);
+  font-size: medium;
+  font-weight: 500;
+}
+
+input.floatright {
+  color: var(--color-5);
+  text-shadow: none;
+  background: var(--color-3);
+  border: 3px solid var(--color-0);
+  border-radius: 10px;
+}
+
+input.floatright:hover {
+  color: var(--color-4);
+  text-shadow: none;
+  background: var(--transparent-color-2);
+  border: 2px solid var(--color-4);
+  border-radius: 10px;
+  margin: 2px;
+}
+
+
+
+/*alerts*/
+.alert.alert-success {
+  color: var(--color-0);
+  background: var(--transparent-color-3);
+  border: 3px solid var(--transparent-color-1);
+}
+
+/*blocks*/
+/*.container-block-main {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.block-main {
+  display: block;
+  overflow: auto;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--color-2);
+  color: var(--color-6);
+  border: 5px solid var(--color-1);
+  border-radius: 10px;
+  text-align: center;
+  scrollbar-color: var(--color-4) var(--color-2);
+  line-height: 1;
+}
+
+.block1-info {
+  position: absolute;
+  width: 40%;
+  height: 96%;
+}
+
+.block2-info {
+  position: absolute;
+  width: 57%;
+  height: 48%;
+  right: 2%;
+  top: 2%;
+}
+
+.block3-info {
+  position: absolute;
+  right: 2%;
+  top: 51%;
+  bottom: 2%;
+  width: 57%;
+}
+
+.block-main-header {
+  font-size: 26px;
+  color: var(--color-4);
+  font-weight: 600;
+}
+
+.block-separator {
+  color: var(--color-5);
+}
+
+.block-text {
+  color: var(--color-5);
+}
+
+.block-lion-card {
+  border: 5px solid var(--color-1);
+  border-radius: 20px;
+  background: none;
+  margin: 2px;
+  width: 98%;
+  display: block;
+  height: min-content;
+  background: var(--color-3);
+}
+
+.card-lion-name {
+  display: inline-block;
+  width: 100%;
+  background: var(--color-1);
+  padding: 10px;
+  margin: 0;
+  font-size: larger;
+  color: var(--color-6);
+  border-radius: 10px 10px 0 0;
+}
+
+.card-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+.card-link img {
+  width: 100%;
+  height: auto;
+}
+
+.lion-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+  background: var(--color-1);
+  align-content: stretch;
+  padding: 10px;
+  line-height: 1.3;
+  color: var(--color-5);
+}*/
+
+/*?credits*/
+.breadcrumb::after {
+  content: "CSS от Polaris Penumbra (#419566)";
+  position: absolute;
+  right: 20%;
+  z-index: 100;
+  color: var(--color-5);
+}
